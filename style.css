@@ -6,10 +6,19 @@
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 ul li {
     list-style: none;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar li a:hover {
+    color: #3A10E5;
 }
 
 .nav-container {
@@ -17,7 +26,9 @@ ul li {
     justify-content: space-between;
     align-items: center;
     max-width: 1440px;
+    padding: 0 6rem;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .navbar-brand img {
@@ -25,7 +36,54 @@ ul li {
     height: 30px;
 }
 
+
 .nav-left {
     display: flex;
-    gap: 15px;
+    align-items: center;
+    padding-right: 200px;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: 1px #000 solid;
+    border-radius: 4px;
+    padding: 7px 16px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn-dark-outline {
+    border-color: #fff;
+    color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-dark {
+    background-color: #3A10E5;
+    color: #fff;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-dark-outline:hover {
+   background-color: rgb(0, 0, 0, 0.06);
+   color: #3A10E5;
+}
+
+.btn-dark:hover {
+    background-color: #6e4df3;
+    color: #f9f9f9;
+}
+
+svg {
+    width: 130px;
+}
+
+svg:hover {
+    color: #3A10E5;
 }
